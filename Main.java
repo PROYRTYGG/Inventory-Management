@@ -51,6 +51,10 @@ public class Main {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
+        boolean removed = inventory.removeProduct(104);
 
+        System.out.println("Was product removed? " + removed);
+
+        inventory.displayInventory();
     }  
 }
